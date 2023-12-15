@@ -4,6 +4,8 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 //import keywords.Parent;
 
+import keywords.Parent;
+
 //import keywords.Parent;
 
 class Parent1 {
@@ -26,6 +28,7 @@ public class ReflectionTest {
 		System.out.println(class1.getName());
 		System.out.println();
 		
+		
 		Class class2=Parent2.class;
 		System.out.println(class2.getName());
 		for(Method m:class2.getDeclaredMethods()) {
@@ -42,7 +45,7 @@ public class ReflectionTest {
 		for(Annotation s:parentInstance.getDeclaredAnnotations()) {
 			System.out.println("Hey"+s);
 		}
-		System.out.println("Class: "+parentInstance.getName()+"\nPackage: "+parentInstance.getPackageName()+"\n ");
+		System.out.println("Class: "+parentInstance.getName()+"\nPackage: "+parentInstance.getPackage().getName()+"\n ");
 		for(Field m:parentInstance.getDeclaredFields()) {
 			System.out.println(m);
 		}
@@ -58,8 +61,14 @@ public class ReflectionTest {
 		
 		Class c1=Class.forName("reflection.int1");
 		System.out.println("Is it interface? "+c1.isInterface());
-		System.out.println(c1.getName()+" "+c1.getPackageName());
+		System.out.println(c1.getName()+" "+c1.getPackage().getName());
+		ReflectionTest rTest=new ReflectionTest();
+		rTest.checkCasting(parent, parent);
 		
+	}
+	
+	public <T> void checkCasting(Object o,T b) {
+
 	}
 
 }

@@ -5,6 +5,8 @@ public class Outer {
 	@SuppressWarnings("unused")
 	private void changeAccess() {
 		System.out.println("Access Changed!");
+		MemberInner inner = new MemberInner();
+		System.out.println(inner.a);
 	}
 	
 	@SuppressWarnings("unused")
@@ -13,6 +15,7 @@ public class Outer {
 	}
 	static int data1=100;
 	class MemberInner{
+		private int a=100;
 		//outside any method
 		void msg() {
 			System.out.println("Data is: "+data);
@@ -22,12 +25,16 @@ public class Outer {
 	void display()
 	{
 		final int data=60;
+		int datax = 10;
 		System.out.println("Method of outer class.");
+		this.changeAccess();
 		class LocalInner{
 			//couldn't access non-final variable of outer class method before jdk  1.7
 			void show()
 			{
+				new Outer().changeAccess();
 				System.out.println("Local Inner class method. Data: "+data);
+				System.out.println("Local Inner class method. Datax: "+datax);
 			}
 		}
 		LocalInner localIn=new LocalInner();
@@ -43,7 +50,7 @@ public class Outer {
 		}
 	}
 	
-	interface NestedInterface1{
+	 interface NestedInterface1{
 		void showmsg();
 	}
 	
@@ -58,6 +65,8 @@ public class Outer {
 		Outer.staticInner staticIn=new Outer.staticInner();
 		staticIn.nonStaticDisplay();
 		Outer.staticInner.staticDisplay();
+		Outer.NestedInterface1 classInterface=new NestedInterface();
+		classInterface.showmsg();
 	}
 
 }

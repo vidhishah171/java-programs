@@ -29,6 +29,17 @@ public class Enumeration {
 			default: 
 				System.out.println("Woah, it's raining.");
 			}
+			String eTest="VOID";
+			switch(EnumStringTest.valueOf(eTest).getValue()){
+			case "Void": 
+				System.out.println("There's so Mondayy.");
+				break;
+			case "Pending": 
+				System.out.println("There's so Tuedayy.");
+				break;
+			default: 
+				System.out.println("Woah, it's working.");
+			}
 		}
 	}
 }

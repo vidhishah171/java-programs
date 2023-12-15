@@ -22,6 +22,16 @@ public class HelloWorld {
 		long x=54L;
 		double x1=x; //opposite not possible
 		System.out.println(x1);
+		int v=1;
+		switch(v) {
+		case 2: 
+			System.out.println("In 2");
+			break;
+		case 1:
+			System.out.println("In 1");
+		case 3: 
+			System.out.println("In 3");
+		}
 		
 	}
 

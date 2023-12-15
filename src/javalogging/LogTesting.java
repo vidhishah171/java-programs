@@ -29,6 +29,7 @@ public class LogTesting {
 		log.severe("Severe level log in file and console.");
 		log.warning("Warning level log in file and console.");
 
+
 	}
 
 }

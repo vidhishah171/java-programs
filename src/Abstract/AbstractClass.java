@@ -8,7 +8,7 @@ public abstract class AbstractClass {
 	}
 	abstract void draw();
 	void fillColor()
-	{
+	{	//Change
 		System.out.println("Filling the shape with "+this.color);
 	}
 	final void show()
