@@ -1,5 +1,7 @@
 package javacollections;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
+
 import reflection.Parent2;
 import java.io.*;
 
@@ -106,6 +108,21 @@ public class ArrayListTest{
 			Parent2 p=iter.next();
 			System.out.println(p.getVar()+" "+p.getFirstName()+" "+p.getLastName());
 		}
+		CopyOnWriteArrayList<Integer> intListx=new CopyOnWriteArrayList<Integer>();
+		intListx.add(1);
+		intListx.add(2);
+		intListx.add(3);
+		intListx.add(4);
+		Iterator<Integer> it = intListx.iterator();
+		while(it.hasNext()) {
+			Integer i = it.next();
+			if(i==2) {
+//				it.remove();
+				intListx.remove(i);
+			}
+		}
+		System.out.println(intListx);
+
 	}
 
 }
