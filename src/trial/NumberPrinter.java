@@ -11,7 +11,7 @@ public class NumberPrinter implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("Number: " + this.number + " || " +Thread.currentThread().getName());
+		System.out.println("Number: " + this.number + " || " +ThreadExample.currentThread().getName());
 //		System.out.println(Thread.currentThread().getName());
 	}
 

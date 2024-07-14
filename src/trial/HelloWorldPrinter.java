@@ -6,7 +6,7 @@ public class HelloWorldPrinter implements Runnable {
 	public void run() {
 		// TODO Auto-generated method stub
 		System.out.println("Hello World from current thread.");
-		System.out.println(Thread.currentThread().getName());
+		System.out.println(ThreadExample.currentThread().getName());
 	}
 
 }
