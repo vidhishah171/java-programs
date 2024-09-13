@@ -1,0 +1,212 @@
+Exp <1 Year
+    1. What is the latest version of java.
+    2. How many types of memory.
+    3. What is jdk and jre.
+
+    4. OOPS concepts
+    5. Runtime and compile time polymorphism
+    6. how hashmap works in terms of get and put - scenario if we have Employee class as a key
+    7. what if we don't override hashcode in hashmap  - scenario if we have Employee class as a key.
+    8. JVM 
+    9. Does jre contain a java compiler?
+    10. String collection pool.
+    11. what is volatile.
+    12. What is transient.
+    13. What is the super keyword?
+    14. What is the use of final keyword
+    15. Why do we need serialization?
+    16. What is a marker interface?
+    17. What is a functional interface?
+    18. Abstract Class 
+a. Abstract class constructor,
+b. If parent is abstract class and child is concrete class then will it call to abstract class constructor,
+    19.  same for parameterized constructor,
+    20.  What is the use of Abstract class constructor?
+    21.  Can we create an object of abstract class?
+    22.  Overriding 
+
+If SuperClass doesn’t declare any exception and subclass declare checked exception
+>Not compiled
+
+If SuperClass doesn’t declare any exception and SubClass declare Unchecked exception
+>Works fine
+
+
+If SuperClass declares an exception and SubClass declares exceptions other than the child exception of the SuperClass declared Exception
+> won't compile
+
+
+If SuperClass declares an exception and SubClass declares an child exception of the SuperClass declared Exception.
+> Works find
+
+If SuperClass declares an exception and SubClass declares without exception.
+> Works fine
+
+    23. Java 8 functional interfaces and stream operations.
+    24. Hashmap- If hashcode and equals methods doesn't override in custom class then what will happen
+    25. What is stack?
+    26. What are the new features in java8
+    27. What is the difference between pop and peek.
+    28. What is the queue?
+    29. How to implement it in java.
+    30. What  is string immutable? Why is a string buffer more useful? Does it not create a new string object?
+    31. How to create an immutable class?
+    32. What is the numberformat exception and how to handle it?
+    33. Serialization and Deserialization
+        a. Parent child
+        b. Class and Collections
+    34.        How does a hashmap work?
+    35. Composition vs Aggregation Vs Association.
+    36. How to get the second highest salary from the database.
+    37. Time Complexity of arraylist and hashmap
+    38.  Internal working of Arraylist.
+        a. How it resized
+
+    39. What happens if we use a hashcode unique for each object.
+    40.  [2,1,2,3,4,5] how to find the first unique elements in an array. I had given 2-3 solutions . He was expecting to use any collections and without using utility methods.
+    41. [1,2,4,4] how to find the pairs which gives the sum 8.
+    42. What is a binary tree and what is a tree?
+    43. Difference between tree and binary tree.
+    44. how to find the middle element of the linked list.
+    45. What is string buffer vs string builder vs string
+    46. What is the time complexity of searching in a linked list.
+
+2nd Round 
+    1. Linked list finds the middle element.
+    2. Bookmyshow class diagram.
+    3. How do you check whether a query is slow or not?
+    4. Q #1) Write a Java Program to reverse a string without using String inbuilt function.
+    5.  #18) Write a Java Program to remove all white spaces from a string using replace().
+
+
+Exp<2
+    47. Using Copy technique - Shallow or Deep clone copy?
+    48. How Stream filter process the list elements- one by one or whole list a time
+    49. how to use lambda for sorting in java
+    50. what is the superclass of all the classes in java.
+    51. Why to use @component ? and if we don't use components what happens?
+    52. Final Class in java
+    53. Final Entity in hibernate
+    54. What is volatile in thread? How is it different from static?
+    55. What the thread pool and its different services.
+    56. How thread pools are different from collection pools.
+    57. How to measure heap memory by using java command.
+    58. How annotation works?
+    59. How to print Welcome + Parth 100 times using two threads .
+    60. Spring core Annotation
+    61. Spring hibernate
+    62. What is the Join method?
+    63. Can we run the same thread again after one time execution?
+    64. What is BlockingQueue?
+    65. Cloning in java
+    66. What is a binary tree? 
+    67. Transaction Type in spring
+    68. Git conflict for 100 files
+    69. What is the java8 garbage collector.
+    70. How to make arraylist immutable.
+    71. How to convert the arrays of 1000 item to arraylist.
+    72. How to use array for 10k records.
+    73. How memory is allocated for arraylist and array.
+    74. What happens when we remove elements from array and arraylist.
+    75. Java 8 Collection feature
+    76. Static method of the interface and how to use it.
+    77. What happens if the class implements 2 interfaces which is providing the same default method.
+    78. How transaction annotation works
+    79. Binary search 
+    80. Different transaction isolation levels
+    81. Transaction propagation
+    82. How to use lambda stream to join the String array.
+    83. Fail Safe vs Fail Fast
+    84. Indexing and hashing in DB
+    85. Which is good arraylist vs hashmap in searching
+    86. What happens if we provide 2 beans of same type in the same bean. How to solve it?
+    87. Difference between @RequestBody and @RequestParameter.
+    88. What are the advantages of spring boot.
+    89. How concurrent hashmap works.
+    90. . what is the full form of rest
+    91. Spring Rest?
+    92. What are the design patterns you know?
+    93. How to make this class mutable as Date is mutable…
+    94.  Hibernate inheritance and many to many mapping.
+    95. Create one endpoint for declaring the method rest.
+    96. How the custom object compare
+
+
+Exp<3
+
+    97. @version
+    98.  What is Autoconfiguration in spring boot.
+    99. . How to configure 2 db in spring database.
+    100. 13. What is solid principles.
+    101.  What is Executor Service and different implementation of it
+    102. What are the disadvantages of indexing.
+    103. Find no of employees under every employee's programs.
+    104. How many instance created when used singleton== prototype bean
+    105. What is semaphore?
+    106. Where threads are used in spring and spring boot
+    107. How spring batch works or framework of spring batch.
+    108. URL shortener.
+    109. How to define the lazy loaded components.
+    110. Spring Security how it works.
+    111. ArraySort vs Collections.sort
+    112. Is Null allowed in treeset.
+    113. What is the internal working of Treeset. 
+    114. Threadsafe Singleton
+    115. Executor Vs ExecutorService
+    116. How to change the Garbage collector.
+    117. What are the different status groups?
+    118. Shutdown vs ShutdownNow
+    119. ThreadLocal variable
+    120. Java Profiler
+    121. What is @GeneratedValue
+    122. How many types of GeneratedValues Strategy
+
+Exp<5
+
+    123.  Microservice Patterns saga, caps, cab
+    124. Runnable vs callable
+    125. How to schedule the task for some specific time interval in threadpool or ..
+    126. SOLID principles
+    127. All the multithreading latches, locking, barrieres
+    128. Deadlock and prevention
+    129. Concurrency API
+    130. Two same thread updating the concurrent hashmap
+    131. Design patterns
+    132. Tasklets
+    133. How to get the time of execution of different methods.
+    134. double checked locking
+    135. Feign Client
+    136. What is the image you used for java in openjdk or openjre
+    137. how conditional works.
+
+
+=========================================================
+
+Mongodb
+
+    1. How to handle mongodb joins of two tables.
+    2. Why do you choose mongodb on top of other no sql dbs
+
+Difference between Unique and Primary Key.
+DB questions. Use of group by and max function. Max sales per month
+
+Id
+Name
+1
+Ind
+2
+Pak
+3
+SL
+4
+Ban
+
+
+What is normalization?
+Primary key vs super key vs foreign key vs candidate key
+
+How to show the total salary of each department ?
+What is the difference between functions and procedures?
+
+===========================================================
+
